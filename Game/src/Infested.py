@@ -54,16 +54,16 @@ def main():
             if event.type == pygame.KEYDOWN:
                 # Move the player to the left
                 if event.key == pygame.K_LEFT:
-                    player.request_update_x(-5)
+                    player.request_update_x((player.PLAYER_WIDTH / 2) * -1)
                 # Move the player to the right
                 elif event.key == pygame.K_RIGHT:
-                    player.request_update_x(5)
+                    player.request_update_x(player.PLAYER_WIDTH / 2)
                 # Move the player up
                 elif event.key == pygame.K_UP:
-                    player.request_update_y(-5)
+                    player.request_update_y((player.PLAYER_WIDTH / 2) * -1)
                 # Move the player down
                 elif event.key == pygame.K_DOWN:
-                    player.request_update_y(5)
+                    player.request_update_y(player.PLAYER_WIDTH / 2)
 
             # Key up events
             if event.type == pygame.KEYUP:

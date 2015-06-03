@@ -6,6 +6,7 @@
 # This is the player object
 #
 
+
 class Player:
 
     COORD_X = 400
